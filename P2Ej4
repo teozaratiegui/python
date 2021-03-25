@@ -1,0 +1,10 @@
+cadena = input("Ingresa la clave (debe tener menos de 10 caracteres y no contener los símbolos:@ y !):")
+if len(cadena)>10:
+    print("ingresaste mas de 10 caracteres");
+else:
+    if '@'in cadena:
+        print('ingresaste @')
+    elif '!' in cadena:
+        print('ingresaste !')
+    else:
+        print('OK')
