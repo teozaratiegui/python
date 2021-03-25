@@ -1,0 +1,9 @@
+cadena = input("ingrese una frase: ")
+clave = input("ingrese una palabra: ")
+cadena = cadena.lower().split()
+cant = 0
+for palabra in cadena:
+    if palabra == clave:
+        cant += 1
+print(f"""palabra: {clave}
+cantidad de apariciones: {cant}""")
