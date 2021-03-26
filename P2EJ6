@@ -1,0 +1,11 @@
+cadena = input("ingrese una frase: ")
+cadena = cadena.replace(',','').replace('.','').lower().split()
+lista = []
+diccionario = {}
+for palabra in cadena:
+    if not palabra in diccionario.keys():
+        diccionario[palabra] = 1
+        lista.append(palabra)
+    else:
+        diccionario[palabra] = 1
+print(lista)
